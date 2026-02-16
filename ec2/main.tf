@@ -10,5 +10,6 @@ resource "aws_instance" "my-instance" {
     "Name" = "dhruv"
     "app"  = "frontend"
     "for" = "dhruv"
+    "env" = var.env
     }
 }
