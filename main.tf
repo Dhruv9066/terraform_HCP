@@ -4,7 +4,7 @@ provider "aws" {
 module "ec2_demo" {
 source = "./ec2"
 instance_type = "t2.micro"
-env = "dev"
+env = "prod"
 }
 
 output "child_value_from_root" {
