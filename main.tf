@@ -3,7 +3,7 @@ provider "aws" {
 }
 module "ec2_demo" {
 source = "./ec2"
-instance_type = "t2.micro"
+instance_type = "t2.nano"
 env = "prod"
 }
 
