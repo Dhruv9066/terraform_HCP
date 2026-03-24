@@ -4,7 +4,7 @@ on: [workflow_dispatch,push] #Trigger when this workflow will be run
 
 jobs:
   first_job:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: first-step
       run: echo "Hello from dhruv"
