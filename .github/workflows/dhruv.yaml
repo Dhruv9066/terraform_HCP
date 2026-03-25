@@ -3,7 +3,7 @@ on: push
 jobs:
 
   first_job:
-    
+
     runs-on: ubuntu-latest
     
     steps:
@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v6
 
     - name: executing the shell script
-      run: ./dhruv.sh
+      run: sudo ./dhruv.sh
 
     - name: listing the code
       run: | 
