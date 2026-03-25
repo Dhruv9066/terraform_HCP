@@ -1,14 +1,14 @@
 name: first_workflow
-
-on: [workflow_dispatch,push] #Trigger when this workflow will be run 
-
+on: push
 jobs:
+
   first_job:
     runs-on: ubuntu-latest
+    
     steps:
-    - name: first-step
-      run: echo "Hello from dhruv"
-    - name: second-step
-      run: echo "Bye from dhruv"
-    - name: listing the file
+
+    - name: checking out the code
+      uses: actions/checkout@v6
+
+    - name: listing the code
       run: ls
