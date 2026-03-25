@@ -18,6 +18,8 @@ jobs:
           cat ./a.txt
     
   second_job:
+    needs:
+      - first_job
     runs-on: ubuntu-latest
     steps:
     - name: I am second job
