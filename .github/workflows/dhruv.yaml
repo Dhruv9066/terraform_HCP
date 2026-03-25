@@ -3,6 +3,7 @@ on: push
 jobs:
 
   first_job:
+    
     runs-on: ubuntu-latest
     
     steps:
@@ -10,5 +11,12 @@ jobs:
     - name: checking out the code
       uses: actions/checkout@v6
 
+    - name: executing the shell script
+      run: ./dhruv.sh
+
     - name: listing the code
-      run: ls
+      run: | 
+          ls
+          echo "hello from gihub action"
+          cat ./a.txt
+    
